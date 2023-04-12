@@ -1,11 +1,12 @@
 import React from "react";
 import Song from "./Song";
 
-const SongList = ({songs}) => {
+const SongList = ({chartSongs}) => {
 
     const chartSongs = songs.map((chartSong, index) => {
-        return <Song song={chartSong} key={index}/>
+        return <Song chartSong={chartSong} key={index} />
     })
+
     return (  
         <>
         <ul>

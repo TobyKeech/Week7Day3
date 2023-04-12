@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import SongList from "../components/SongList";
 
 
-const SongContainer = () => {
+const chartSongContainer = () => {
     const [chartSongs,setChartSongs] = useState([]);
 
     useEffect(() => {
@@ -23,4 +23,4 @@ const SongContainer = () => {
      );
 }
  
-export default SongContainer;
+export default chartSongContainer;
