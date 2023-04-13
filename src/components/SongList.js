@@ -3,15 +3,15 @@ import Song from "./Song";
 
 const SongList = ({chartSongs}) => {
 
-    const chartSongs = songs.map((chartSong, index) => {
-        return <Song chartSong={chartSong} key={index} />
+    const chartIems = chartSongs.map((song, index) => {
+        return <Song chartSong={song} key={index} />
     })
 
     return (  
         <>
-        <ul>
-            {chartSongs}
-        </ul>
+        <ol>
+            {chartIems}
+        </ol>
         </>
     );
 }
